@@ -13,9 +13,6 @@ function handleSubmit(event) {
         password: elements.password.value.trim()
     }
 
-    event.target.reset();
-
-    console.log(info);
     
     if (info.email === "" || info.password === "") {
         return alert('All form fields must be filled in');
@@ -23,4 +20,7 @@ function handleSubmit(event) {
         return info;
     }
     
+    event.target.reset();
+
+    console.log(info);
 }

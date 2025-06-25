@@ -15,12 +15,10 @@ function handleSubmit(event) {
 
     
     if (info.email === "" || info.password === "") {
-        return alert('All form fields must be filled in');
-    } else {
-        return info;
-    }
+        alert('All form fields must be filled in');
+        return;
+    } 
     
-    event.target.reset();
-
     console.log(info);
+    event.target.reset();
 }
